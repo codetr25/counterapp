@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swAutomatic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Speed: 1 second"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/txtCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text=" 0 "
+        android:textSize="40sp"/>
+
+    <ImageView
+        android:id="@+id/imgStart"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/txtCounter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:src="@drawable/button_up" />
+
+    <ImageView
+        android:id="@+id/imgReset"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/swSound"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:src="@drawable/baseline_refresh_24" />
+    <Switch
+        android:id="@+id/swVibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layoutDirection="rtl"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="Vibration"
+        android:textSize="20sp"/>
+
+    <Switch
+        android:id="@+id/swAutomatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="#ffffff"
+        android:layoutDirection="rtl"
+        android:padding="5dp"
+        android:text="Automatic"
+        android:textSize="20sp" />
+    <Switch
+        android:id="@+id/swSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layoutDirection="rtl"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="Sound"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
